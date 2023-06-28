@@ -1,0 +1,26 @@
+{
+    "manifest_version": 2,
+    "name": "Focus Fixer",
+    "description": "FocusFixer is a flexible productivity tool that helps with tracking and management of time spent on your mostly liked coding platforms, with screen-time.",
+    "short_name": "FocusFixer",
+    "version": "1.0.0",
+    "browser_action": {
+      "default_popup": "index.html",
+      "default_icon" : "images/icon_161.png"
+    },
+    "icons": {
+      "161": "images/icon_161.png"
+    },
+    "background": {
+      "scripts": [
+        "js/background/main.js"
+      ]
+    },
+    "permissions": [
+      "storage",
+      "notifications",
+      "tabs"
+    ],
+    "content_security_policy": "script-src 'self'; object-src 'self'"
+  }
+  
